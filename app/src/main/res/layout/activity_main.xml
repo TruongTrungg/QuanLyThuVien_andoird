@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản Lý Đọc Giả"
+        android:background="#1C2242"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/tvmadg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã Đọc Giả" />
+
+    <EditText
+        android:id="@+id/edmadocgia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Mã Đọc Giả"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Họ và tên" />
+
+    <EditText
+        android:id="@+id/edten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap ho ten"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới tính" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh" />
+
+    <EditText
+        android:id="@+id/edngaysinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+             android:hint="Nhap ngay sinh"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CCCD" />
+
+    <EditText
+        android:id="@+id/edcccd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap CCCD"
+        android:inputType="text"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btndocdbdocgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1C2242"
+            android:layout_marginHorizontal="2dp"
+            android:text="Đọc data" />
+        <Button
+            android:id="@+id/btnthem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1C2242"
+            android:layout_marginHorizontal="2dp"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btncapnhat"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#1C2242"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+
+            android:text="Cập nhật" />
+
+        <Button
+            android:id="@+id/btnxoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EF0A0A"
+            android:layout_marginHorizontal="2dp"
+            android:text="Xóa" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bthome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1C2242"
+            android:text="Home" />
+        <Button
+            android:id="@+id/btnmuonsach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1C2242"
+            android:text="Mượn Trả Sách" />
+        <Button
+            android:id="@+id/btquanlysach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1C2242"
+            android:text="Sách" />
+        <Button
+            android:id="@+id/btThongKe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1C2242"
+            android:text="Thống Kê" />
+    </LinearLayout>
+</LinearLayout>

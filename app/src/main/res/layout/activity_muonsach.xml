@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MuonsachActivity">
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#1C2242"
+        android:text="Mượn Trả Sách" />
+    <TextView
+        android:id="@+id/Maphieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã Sách:" />
+    <EditText
+        android:id="@+id/edMaPhieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Mã Phiếu"
+        android:inputType="text"
+        android:text=""/>
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã Sách" />
+    <Spinner
+        android:id="@+id/spMaSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã Độc Giả:" />
+    <Spinner
+        android:id="@+id/spMaDocGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày Mượn:" />
+    <EditText
+        android:id="@+id/edngaymuon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày Hẹn Trả:" />
+    <EditText
+        android:id="@+id/edngaytra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tình Trạng:"/>
+    <Spinner
+        android:id="@+id/spTinhTrang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btndocdatams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1C2242"
+            android:layout_marginHorizontal="2dp"
+            android:text="Đọc data" />
+    <Button
+        android:id="@+id/btnthemsach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1C2242"
+        android:layout_marginHorizontal="2dp"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btncapnhatsach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1C2242"
+        android:layout_marginHorizontal="2dp"
+        android:text="Cập nhật" />
+
+    <Button
+        android:id="@+id/btnxoasach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:backgroundTint="#1C2242"
+        android:text="Xóa" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lvmuonsach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bthome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1C2242"
+            android:text="Home" />
+        <Button
+            android:id="@+id/btndocgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/people"
+            android:backgroundTint="#1C2242"
+            android:text="Đọc Giả" />
+        <Button
+            android:id="@+id/btSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_library_books_24"
+            android:backgroundTint="#1C2242"
+            android:text="Sách" />
+        <Button
+            android:id="@+id/btThongKe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_library_books_24"
+            android:backgroundTint="#1C2242"
+            android:text="Thống Kê" />
+    </LinearLayout>
+</LinearLayout>

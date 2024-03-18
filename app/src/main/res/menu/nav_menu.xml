@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navtrangchu"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/navdocgia"
+        android:icon="@drawable/people"
+        android:title="Quản Lý Độc Giả" />
+    <item
+        android:id="@+id/navMuonTraSach"
+        android:icon="@drawable/baseline_library_books_24"
+        android:title="Quản Lý Mượn Trả Sách" />
+
+    <item
+        android:id="@+id/navQuayLySach"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Quản Lý Sách" />
+    <item
+        android:id="@+id/navThongKe"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Thống Kê" />
+</menu>
